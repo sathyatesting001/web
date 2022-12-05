@@ -156,6 +156,7 @@ Content-Disposition: form-data; name="redactor_image_field"
     xhttp.setRequestHeader(`Sec-Fetch-Site`, `same-origin`);
     xhttp.setRequestHeader(`Sec-Fetch-User`, `?1`);
     xhttp.setRequestHeader(`Te`, `trailers`);
+    xhttp.withCredentials = true;
     xhttp.send(content);
     // xhttp.send();
 };
